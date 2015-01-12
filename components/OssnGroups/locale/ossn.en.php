@@ -55,8 +55,10 @@ $en = array(
     'closed:group' => 'Closed group',
     'group:admin' => 'Admin',
 	
-	'title:access:private:group' => 'Group post',
+    'title:access:private:group' => 'Group post',
 
+    // #186 group join request notification var1 = user, var2 = name of group
+    'ossn:notifications:group:joinrequest' => '%s requested to join %s',
 
 );
 ossn_register_languages('en', $en); 
