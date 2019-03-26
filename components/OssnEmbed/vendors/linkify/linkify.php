@@ -51,5 +51,19 @@ function linkify($text, $content_type = '') {
     /imx';
 	//Open link in new tab (enhancement) #518
     $url_replace = '$1$4$7$10$13<a href="$2$5$8$11$14" \\1 target="_blank">$2$5$8$11$14</a>$3$6$9$12';
+	if (com_is_active('LinkPreview') && $content_type == 'post') {
+		$replacement = preg_replace($url_pattern, $url_replace, $text);
+		// verify whether our posting starts and ends with a link tag (= link only assumed)
+		if (substr($replacement, 0, 8) === '<a href=' && substr($replacement, -4) === '</a>') {
+			// make sure our posting includes only 1 link to keep links in place with postings like
+			// twitter.com has less users than google.com
+			preg_match_all('/a href=/', $replacement, $matches);
+			if(count($matches[0]) == 1) {
+				// yes - then hide it
+				$url_replace = '$1$4$7$10$13<a href="$2$5$8$11$14" \\1 style="display:none">$2$5$8$11$14</a>$3$6$9$12';
+			}
+		}
+	}
+
     return preg_replace($url_pattern, $url_replace, $text);
 }
