@@ -8,7 +8,7 @@
  *
  * Usage:   See example page: linkify.html
  */
-function linkify($text) {
+function linkify($text, $content_type = '') {
     $url_pattern = '/# Rev:20100913_0900 github.com\/jmrware\/LinkifyURL
     # Match http & ftp URL that is not already linkified.
       # Alternative 1: URL delimited by (parentheses).
