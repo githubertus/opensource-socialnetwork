@@ -64,6 +64,5 @@ function linkify($text, $content_type = '') {
 			}
 		}
 	}
-
     return preg_replace($url_pattern, $url_replace, $text);
 }
