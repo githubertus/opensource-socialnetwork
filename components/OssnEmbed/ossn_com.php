@@ -49,7 +49,7 @@ function ossn_embed_wall_template_item($hook, $type, $return){
 						);
 	$regex = "/<a[\s]+[^>]*?href[\s]?=[\s\"\']+"."(.*?)[\"\']+.*?>"."([^<]+|.*?)?<\/a>/";
 	
-	$return['text'] = linkify($return['text']);
+	$return['text'] = linkify($return['text'], 'post');
 	if(preg_match_all($regex, $return['text'], $matches, PREG_SET_ORDER)){
 	foreach($matches as $match){
 			foreach ($patterns as $pattern){
