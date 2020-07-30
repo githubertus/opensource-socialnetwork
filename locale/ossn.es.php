@@ -308,6 +308,7 @@ Haga clic en el enlace de abajo para restablecer la contraseña o copie y pegue 
 	'admin:com:requirements' => 'Requerimientos',
 	'admin:com:requirement' => 'Requisito',
 	'admin:com:fulfilled' => 'Cumplido',
+	'admin:com:used:by' => 'Usado por',
 	'ossn:exception:make:sure' => '¿Estás seguro?',
 	'ossn:premium' => 'Versión Premium',
 	'datepicker:days' => "Su, Mo, Tu, We, Th, Fr, Sa",
