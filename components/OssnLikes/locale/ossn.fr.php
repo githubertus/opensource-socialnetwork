@@ -1,7 +1,7 @@
 <?php
 /**
  * Open Source Social Network
- *
+ * 
  * @package   Open Source Social Network
  * @author    Open Social Website Core Team <info@softlab24.com>
  * @copyright (C) SOFTLAB24 LIMITED
@@ -10,11 +10,11 @@
  */
 $fr = array(
 	'people:like:this' => 'Personnes qui aiment ce message',
-    'ossn:like:this' => '%s aime ça',
-    'ossn:like:you:and:this' => 'Vous et %s aimez ça',
+    'ossn:like:this' => '%s aime Ã§a',
+    'ossn:like:you:and:this' => 'Vous et %s aimez Ã§a',
     'ossn:like:people' => '%s Personnes',
     'ossn:like:person' => '%s Personne',
-    'ossn:liked:you' => 'Vous aimez ça',
+    'ossn:liked:you' => 'Vous aimez Ã§a',
     'ossn:unlike' => 'Ne plus aimer',
     'ossn:like' => 'Aimer',		
 );
