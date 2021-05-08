@@ -42,7 +42,7 @@ class OssnBlock extends OssnEntities {
 		 * @access public
 		 */
 		public static function isBlocked($usera, $userb) {
-				if(isset($usera->guid) && $usera->guid != $userb->guid){
+				if(isset($usera->guid) && isset($userb->guid) && $usera->guid != $userb->guid){
 						return ossn_relation_exists($usera->guid, $userb->guid, 'userblock');
 				}
 				return false;
